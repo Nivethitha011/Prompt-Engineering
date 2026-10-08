@@ -3,21 +3,12 @@ import streamlit as st
 from llm import get_llm, generate_response
 from prompt_template import create_prompt
 
-
-# ==================================================
-# PAGE CONFIGURATION
-# ==================================================
-
 st.set_page_config(
     page_title="PromptXpert AI",
     page_icon="⚡",
     layout="wide"
 )
 
-
-# ==================================================
-# CUSTOM CSS
-# ==================================================
 
 st.markdown(
     """
@@ -120,11 +111,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-# ==================================================
-# SIDEBAR
-# ==================================================
-
 with st.sidebar:
 
     st.title("Prompt Settings")
@@ -173,10 +159,6 @@ with st.sidebar:
     )
 
 
-# ==================================================
-# MAIN INPUT SECTION
-# ==================================================
-
 st.header("Describe Your Idea")
 
 st.write(
@@ -194,20 +176,11 @@ user_input = st.text_area(
     label_visibility="collapsed"
 )
 
-
-# ==================================================
-# GENERATE BUTTON
-# ==================================================
-
 generate = st.button(
     "⚡ Generate Powerful Prompt",
     type="primary"
 )
 
-
-# ==================================================
-# GENERATION
-# ==================================================
 
 if generate:
 
@@ -241,11 +214,7 @@ if generate:
                     temperature,
                     max_tokens
                 )
-
-            # ==================================================
-            # GENERATED PROMPT
-            # ==================================================
-
+                
             st.divider()
 
             st.subheader("Generated Prompt")
@@ -263,10 +232,6 @@ if generate:
                 mime="text/plain"
             )
 
-            # ==================================================
-            # AI RESPONSE
-            # ==================================================
-
             st.subheader("AI Response")
 
             st.write(response)
@@ -277,10 +242,6 @@ if generate:
                 f"Unable to generate response: {error}"
             )
 
-
-# ==================================================
-# FEATURES
-# ==================================================
 
 st.divider()
 
@@ -359,10 +320,6 @@ with col3:
         unsafe_allow_html=True
     )
 
-
-# ==================================================
-# FOOTER
-# ==================================================
 
 st.markdown(
     """
