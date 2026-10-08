@@ -1,59 +1,60 @@
-# Prompt-Engineering
-
 # PROMPTXPERT AI
 
-## Transform Simple Ideas into Powerful AI Prompts
+A Streamlit-based Prompt Engineering application that demonstrates different prompting techniques using a Large Language Model (LLM).
 
-PromptXpert AI is a Prompt Engineering application that helps users experiment with different prompting techniques and generate AI-powered responses.
+The application allows users to enter a task or question, select a prompting technique, adjust response settings, generate the corresponding prompt, and receive an AI-generated response.
 
-The application allows users to select a prompting technique, enter a question or task, adjust response creativity and response length, and generate an AI response.
+## Project Overview
+
+This project demonstrates how different Prompt Engineering techniques can influence the way an LLM understands instructions and generates responses.
+
+The application supports:
+
+- Zero-shot Prompting
+- One-shot Prompting
+- Few-shot Prompting
+- Chain of Thought (CoT)
+- Manual Chain of Thought
+- Tree of Thoughts (ToT)
+- Multi-Step Chain of Thought (MCOT)
+
+The application uses Hugging Face for AI-powered response generation and Streamlit for the user interface.
 
 ## Features
 
-- Simple and user-friendly interface
-- Multiple Prompt Engineering techniques
-- Zero-Shot Prompting
-- One-Shot Prompting
-- Few-Shot Prompting
-- Chain of Thought
-- Manual Chain of Thought
-- Tree of Thoughts
-- Multi-Step Chain of Thought (MCOT)
-- Response creativity control
-- Response length control
-- AI-powered response generation
-- Generated prompt preview
-- Streamlit-based web interface
+### 1. Zero-shot Prompting
 
-## Prompting Techniques
+The model receives a task without any examples and generates a response directly.
 
-### Zero-Shot Prompting
+### 2. One-shot Prompting
 
-Generates a response without providing examples to the AI model.
+The model receives one example before processing the user's task.
 
-### One-Shot Prompting
+### 3. Few-shot Prompting
 
-Provides one example to guide the AI model before processing the user's question.
+The model receives multiple examples to understand the expected response style before answering the user's task.
 
-### Few-Shot Prompting
+### 4. Chain of Thought
 
-Provides multiple examples to help the AI understand the expected response pattern.
+The model is guided to solve a problem using a structured approach and provide a concise explanation without exposing private internal reasoning.
 
-### Chain of Thought
+### 5. Manual Chain of Thought
 
-Uses a structured problem-solving approach to produce a clear explanation and final answer.
+The prompt provides a predefined structure for solving the problem, including:
 
-### Manual CoT
+1. Understand the problem
+2. Identify the important information
+3. Apply the appropriate method
+4. Verify the result
+5. Provide the final answer
 
-Uses predefined reasoning steps to organize the problem-solving process.
+### 6. Tree of Thoughts
 
-### Tree of Thoughts
+The model is guided to consider multiple possible approaches, compare them, and select the most suitable approach.
 
-Considers multiple possible approaches and selects a suitable solution.
+### 7. Multi-Step Chain of Thought
 
-### MCOT
-
-Uses a multi-step structure including problem understanding, strategy, solution, verification, and final answer.
+The model follows a multi-step structure including problem understanding, important information, strategy, solution, verification, and final answer.
 
 ## Technologies Used
 
@@ -61,7 +62,9 @@ Uses a multi-step structure including problem understanding, strategy, solution,
 - Streamlit
 - Hugging Face
 - Hugging Face Inference API
-- python-dotenv
+- Python-dotenv
+- Prompt Engineering
+- Large Language Models (LLMs)
 
 ## Project Structure
 
@@ -73,6 +76,5 @@ Prompt engineering/
 ├── prompt_template.py
 ├── requirements.txt
 ├── .env
-└── .gitignore
-
-
+├── .gitignore
+└── README.md
