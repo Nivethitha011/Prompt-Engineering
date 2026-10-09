@@ -4,6 +4,16 @@ A Streamlit-based Prompt Engineering application that demonstrates different pro
 
 The application allows users to enter a task or question, select a prompting technique, adjust response settings, generate the corresponding prompt, and receive an AI-generated response.
 
+##Project Images
+<img width="701" height="445" alt="image" src="https://github.com/user-attachments/assets/e9b4e2df-1979-48ca-af59-fdd97ad88bb1" />
+<img width="758" height="441" alt="image" src="https://github.com/user-attachments/assets/14a7f17b-1235-4bdc-8118-b5c55d9cfa76" />
+<img width="851" height="427" alt="image" src="https://github.com/user-attachments/assets/d033037b-4f1d-4143-9e7f-79b30d2a83af" />
+<img width="862" height="445" alt="image" src="https://github.com/user-attachments/assets/1a39e41f-4b59-45ed-a919-b12c1d217b6a" />
+
+
+
+
+
 ## Project Overview
 
 This project demonstrates how different Prompt Engineering techniques can influence the way an LLM understands instructions and generates responses.
